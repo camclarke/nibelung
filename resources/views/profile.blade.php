@@ -3,7 +3,7 @@
 @section('content')
     <div class="container-fluid">
         <div>
-            <h1>Profile</h1>
+        <h1>User: {{$user->name}}</h1>
         </div>
         <div class="d-flex">
             <div class="pr-5"><strong>125</strong> First value</div>
