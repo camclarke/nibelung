@@ -36,4 +36,11 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function profile()
+    {
+        //This is in the App namespace, because of this, it is not necesary to do \App\Profile::class
+        return $this->hasOne(Profile::class);
+    }
+
 }
