@@ -19,3 +19,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/profile/{user}', 'ProfilesController@index')->name('profile.show');
+Route::get('/quotator', 'QuotatorController@index')->name('quotator');
+Route::get('/quotator/{quote}', 'QuotatorController@index')->name('quotator.show');
