@@ -10,5 +10,8 @@
             <div class="pr-5"><strong>456</strong> Second value</div>
             <div class="pr-5"><strong>789</strong> Third value</div>
         </div>
+        <div class="d-flex">
+            {{ $user->profile->profession ?? 'N/A' }}
+        </div>
     </div>
 @endsection
